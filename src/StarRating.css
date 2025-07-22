@@ -1,0 +1,29 @@
+.star-rating-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height for vertical centering */
+}
+
+.star-rating {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.star {
+  font-size: 24px;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.star.filled {
+  color: #ffc107;
+}
+
+.star.half-filled {
+  background: linear-gradient(90deg, #ffc107 50%, #ccc 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
